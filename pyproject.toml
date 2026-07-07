@@ -5,9 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "datetime>=6.0",
+    "ipykernel>=7.3.0",
     "mypy>=2.1.0",
     "numpy>=2.5.1",
     "pandas>=3.0.3",
     "pytest>=9.1.1",
     "ruff>=0.15.20",
+    "yfinance>=1.5.1",
 ]
