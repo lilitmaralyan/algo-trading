@@ -1,4 +1,4 @@
-from models.candle import Candle
+from algo_trading.models.candle import Candle
 
 from typing import Literal, List
 from datetime import datetime
@@ -17,11 +17,11 @@ def get_historical_data(
         candle = Candle(
             symbol=symbol,
             timestamp=index,
-            open=row["Open"],
-            high=row["High"],
-            low=row["Low"],
-            close=row["Close"],
-            volume=row["Volume"],
+            open=float(row["Open"]),
+            high=float(row["High"]),
+            low=float(row["Low"]),
+            close=float(row["Close"]),
+            volume=float(row["Volume"]),
         )
         candles.append(candle)
     return candles
