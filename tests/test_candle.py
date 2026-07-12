@@ -12,7 +12,7 @@ def valid_candle_data():
         "high": 756.850160,
         "low": 751.633619,
         "close": 752.301880,
-        "volume": 51402500,
+        "volume": 51402500
     }
 
 def test_valid_candle_creation(valid_candle_data):
